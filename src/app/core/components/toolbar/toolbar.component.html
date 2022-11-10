@@ -1,0 +1,9 @@
+<div class="banner">
+</div>
+<ng-container *ngIf="sesion$ | async as sesion">
+  <div *ngIf="sesion.sesionActiva">
+      <mat-toolbar>
+          <span>Bienvenido a la plataforma educativa</span>
+      </mat-toolbar>
+  </div>
+</ng-container>
